@@ -82,8 +82,10 @@
 		float: left;
 		display: block;
 		text-align: center;
-		border: 1px solid;
-		display: inline-table;
+		border: 1px solid darkgray;
+        display: inline-table;
+        border-radius: 4px;
+        box-shadow: 2px 2px 4px #d6d6d6;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -143,10 +145,10 @@
 	h3 {
 		@extend .h3;
 		font-size: 1.4rem;
-                font-weight: 400;
+        font-weight: 400;
 		margin-bottom: 2px;
 		padding-top: 2px;
-		border-top: 1px solid;	
+		border-top: 1px solid darkgray;	
 	}
 
 	img {
