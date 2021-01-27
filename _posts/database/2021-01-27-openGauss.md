@@ -10,7 +10,7 @@ project:
   title: "openGauss"
   type: "C"
   url: "https://jenkins.opengauss.org/"
-  logo: "/assets/images/database/opengauss/logo.jpg"
+  logo: "/assets/images/database/opengauss/logo.png"
 
 ---	
 <p>openGauss</p>
