@@ -142,6 +142,12 @@
 	}
 }
 
+.projects-list-database {
+    @extend .projects-list-bigdata;
+    border: 2px solid lightgreen;
+}
+
+
 .footer {
 	background: $color-alabaster;
 	bottom: 0;
