@@ -6,6 +6,10 @@
     background-color: green;
 }
 
+.bgcyan {
+    background-color: darkcyan;
+}
+
 .container {
 	display: block;
 	margin: 0 auto;
@@ -156,6 +160,10 @@
 	border: 2px solid green;
 }
 
+.projects-list-web {
+    @extend .projects-list-bigdata;
+	border: 2px solid darkcyan;
+}
 
 .footer {
 	background: $color-alabaster;
