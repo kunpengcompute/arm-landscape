@@ -46,7 +46,7 @@
 .intro,
 .projects {
 	padding: 0 0 2rem;
-	.h1 {
+	h1 {
 		color: $color-white-sand;
 		font-family: $font-poppins;
         font-size: 1.8rem;
@@ -59,8 +59,8 @@
         padding-bottom: 2px;
 	}
 
-	.h2 {
-		@extend .h1;
+	h2 {
+		@extend h1;
         background-color:green;
 	}
 }
