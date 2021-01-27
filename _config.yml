@@ -1,0 +1,16 @@
+# User config
+author: "Zhenyu Zheng"
+tagline: "Arm CI Landscape"
+description: "The following CIs are provided by Huawei Open Source Team"
+keywords: "Arm, CI, Landscape"
+email: "landscape@example.com"
+linkedin: "https://www.linkedin.com/"
+twitter: "https://twitter.com/"
+github: "https://github.com/"
+
+# Site config
+baseurl: "/arm-landscape"
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
