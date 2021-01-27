@@ -46,23 +46,6 @@
 .intro,
 .projects {
 	padding: 0 0 2rem;
-	h1 {
-		color: $color-white-sand;
-		font-family: $font-poppins;
-        font-size: 1.8rem;
-        font-weight: 600;
-        line-height: 1;
-        margin: 0;
-        background-color: purple;
-        text-indent: 10px;
-        padding-top: 3px;
-        padding-bottom: 2px;
-	}
-
-	h2 {
-		@extend h1;
-        background-color:green;
-	}
 }
 
 .intro {
@@ -71,13 +54,6 @@
 			font-size: 2.7rem;
 			max-width: 66.66666%;
 		}
-	}
-	.h6 {
-		color: $color-black;
-		font-family: $font-poppins;
-		font-size: 1.4rem;
-		font-weight: 400;
-		margin: 0;
 	}
 }
 
@@ -169,10 +145,7 @@
 
 .projects-list-database {
     @extend .projects-list-bigdata;
-	padding: 1rem 1rem;
 	border: 2px solid green;
-	background: white;
-	@include clearfix;
 }
 
 
