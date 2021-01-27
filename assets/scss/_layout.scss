@@ -1,6 +1,7 @@
 .container {
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 1rem;
 	max-width: 70em;
 	padding: 0 3rem;
 	@include clearfix;
@@ -145,7 +146,7 @@
 .projects-list-database {
     .projects-list-bigdata {
 		padding: 1rem 1rem;
-		border: 2px solid lightgreen;
+		border: 2px solid limegreen;
 		background: white;
 		@include clearfix;
 	
