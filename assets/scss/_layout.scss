@@ -55,6 +55,13 @@
 			max-width: 66.66666%;
 		}
 	}
+	.h6 {
+		color: $color-black;
+		font-family: $font-poppins;
+		font-size: 1.4rem;
+		font-weight: 400;
+		margin: 0;
+	}
 }
 
 .projects-list-bigdata {
@@ -145,10 +152,10 @@
 
 .projects-list-database {
     @extend .projects-list-bigdata;
-		padding: 1rem 1rem;
-		border: 2px solid green;
-		background: white;
-		@include clearfix;
+	padding: 1rem 1rem;
+	border: 2px solid green;
+	background: white;
+	@include clearfix;
 }
 
 
