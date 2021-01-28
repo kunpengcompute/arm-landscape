@@ -90,7 +90,7 @@
 	li {
 		margin-bottom: 1rem;
 		margin-right: 2rem;
-		width: 120px;
+		width: 100px;
 		float: left;
 		display: block;
 		text-align: center;
@@ -124,7 +124,8 @@
 			content: "View Details";
 			color: $color-white;
 			@extend .h2;
-			font-weight: 800;
+			font-size: 0.5rem;
+			font-weight: 400;
 			position: absolute;
 			top: 50%;
 			left: 40%;
@@ -156,8 +157,8 @@
 
 	h3 {
 		@extend .h3;
-		font-size: 1.4rem;
-        font-weight: 400;
+		font-size: 0.4rem;
+        font-weight: 300;
 		margin-bottom: 2px;
 		padding-top: 2px;
 		border-top: 1px solid darkgray;	
