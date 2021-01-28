@@ -2,7 +2,7 @@
     background-color: purple;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    box-shadow: 4px 0 10px #d6d6d6;
+    box-shadow: 4px 5px 5px #d6d6d6;
 }
 
 .bggreen {
@@ -80,7 +80,7 @@
 	border-right: 2px solid purple;
 	border-bottom: 2px solid purple;
 	background: white;
-	box-shadow: 4px 5px 10px #d6d6d6;
+	box-shadow: 4px 5px 5px #d6d6d6;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	@include clearfix;
