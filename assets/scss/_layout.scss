@@ -1,12 +1,17 @@
 .bgpurple {
     background-color: purple;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 4px 0 10px #d6d6d6;
 }
 
 .bggreen {
+    @extend .bgpurple;
     background-color: green;
 }
 
 .bgcyan {
+@extend .bgpurple;
     background-color: darkcyan;
 }
 
@@ -73,7 +78,9 @@
 	padding: 1rem 1rem;
 	border: 2px solid purple;
 	background: white;
-	box-shadow: 1px 1px 3px #d6d6d6;
+	box-shadow: 4px 5px 10px #d6d6d6;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 	@include clearfix;
 
 	li {
