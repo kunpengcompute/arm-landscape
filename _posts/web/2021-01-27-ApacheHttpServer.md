@@ -7,7 +7,7 @@ meta:
   keywords: "Apache, Http Server"
 
 project:
-  title: "Apache Http Server"
+  title: "Apache HttpServer"
   type: "Java"
   url: "https://travis-ci.com/github/apache/httpd/pull_requests"
   logo: "/assets/images/web/apache/logo.png"
