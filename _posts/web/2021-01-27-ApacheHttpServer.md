@@ -4,10 +4,10 @@ permalink: /:title/
 category: web
 
 meta:
-  keywords: "Apache, Http Server"
+  keywords: "Apache, Server"
 
 project:
-  title: "Apache HttpServer"
+  title: "Apache Server"
   type: "Java"
   url: "https://travis-ci.com/github/apache/httpd/pull_requests"
   logo: "/assets/images/web/apache/logo.png"
