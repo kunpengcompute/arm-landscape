@@ -76,7 +76,9 @@
 
 .projects-list-bigdata {
 	padding: 1rem 1rem;
-	border: 2px solid purple;
+	border-left: 2px solid purple;
+	border-right: 2px solid purple;
+	border-bottom: 2px solid purple;
 	background: white;
 	box-shadow: 4px 5px 10px #d6d6d6;
 	border-bottom-left-radius: 3px;
@@ -167,12 +169,16 @@
 
 .projects-list-database {
     @extend .projects-list-bigdata;
-	border: 2px solid green;
+    border-left: 2px solid green;
+	border-right: 2px solid green;
+	border-bottom: 2px solid green;
 }
 
 .projects-list-web {
     @extend .projects-list-bigdata;
-	border: 2px solid darkcyan;
+    border-left: 2px solid darkcyan;
+	border-right: 2px solid darkcyan;
+	border-bottom: 2px solid darkcyan;
 }
 
 .footer {
