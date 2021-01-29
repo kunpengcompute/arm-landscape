@@ -15,6 +15,11 @@
     background-color: darkcyan;
 }
 
+.bgslateblue {
+	@extend .bgpurple;
+		background-color:slateblue;
+	}
+
 .container {
 	display: block;
 	margin: 0 auto;
@@ -179,6 +184,13 @@
     border-left: 2px solid darkcyan;
 	border-right: 2px solid darkcyan;
 	border-bottom: 2px solid darkcyan;
+}
+
+.projects-list-cloud {
+    @extend .projects-list-bigdata;
+    border-left: 2px solid slateblue;
+	border-right: 2px solid slateblue;
+	border-bottom: 2px solid slateblue;
 }
 
 .footer {
