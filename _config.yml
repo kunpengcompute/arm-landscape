@@ -3,10 +3,8 @@ author: "Zhenyu Zheng"
 tagline: "Arm CI Landscape"
 description: "Arm CI Landscape"
 keywords: "Arm, CI, Landscape"
-email: "landscape@example.com"
-linkedin: "https://www.linkedin.com/"
-twitter: "https://twitter.com/"
-github: "https://github.com/"
+email: "zheng.zhenyu@outlook.com"
+github: "https://kunpengcompute.github.io/"
 
 # Site config
 baseurl: "/arm-landscape"
