@@ -14,13 +14,76 @@
 		<section class="intro">
 			<div class="container">
 				<p>{{ site.description }}</p>
+				<h6>CI system is very important in modern software development workflow, it gurantees the quality
+					of the development actions and the software. Arm CI can ensure the software's quality on Arm
+					platform. The following open source projects have Arm CI.</h6>
 			</div>
 		</section>
 		<section class="projects">
 			<div class="container">
-				<h4>Big Data</h4>
+				<h4 class="bgpurple">Big Data</h4>
 				<ul class="projects-list-bigdata">
-					{% for item in site.categories.projects reversed %}
+					{% for item in site.categories.bigdata reversed %}
+						<li>
+							<a href="{{ item.project.url }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="container">
+				<h4 class="bggreen">Database</h4>
+				<ul class="projects-list-database">
+					{% for item in site.categories.database reversed %}
+						<li>
+							<a href="{{ item.project.url }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="container">
+				<h4 class="bgbrown">Virtualization, Cloud, Cloud Native & Storage</h4>
+				<ul class="projects-list-cloud">
+					{% for item in site.categories.cloud reversed %}
+						<li>
+							<a href="{{ item.project.url }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="container">
+				<h4 class="bgcyan">Web</h4>
+				<ul class="projects-list-web">
+					{% for item in site.categories.web reversed %}
+						<li>
+							<a href="{{ item.project.url }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="container">
+				<h4 class="bgdarkred">Artificial Intelligence</h4>
+				<ul class="projects-list-ai">
+					{% for item in site.categories.ai reversed %}
 						<li>
 							<a href="{{ item.project.url }}">
 								<div class="img-wrapper">
