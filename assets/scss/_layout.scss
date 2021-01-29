@@ -17,7 +17,7 @@
 
 .bgbrown {
 	@extend .bgpurple;
-		background-color: rgb(165, 55, 4);
+		background-color: rgb(124, 43, 5);
 	}
 
 .container {
@@ -188,9 +188,9 @@
 
 .projects-list-cloud {
     @extend .projects-list-bigdata;
-    border-left: 2px solid rgb(165, 55, 4);
-	border-right: 2px solid rgb(165, 55, 4);
-	border-bottom: 2px solid rgb(165, 55, 4);
+    border-left: 2px solid rgb(124, 43, 5);
+	border-right: 2px solid rgb(124, 43, 5);
+	border-bottom: 2px solid rgb(124, 43, 5);
 }
 
 .footer {
