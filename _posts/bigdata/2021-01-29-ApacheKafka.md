@@ -1,0 +1,16 @@
+---
+layout: project
+permalink: /:title/
+category: bigdata
+
+meta:
+  keywords: "Apache, Kafka"
+
+project:
+  title: "Apache Kafka"
+  type: "Scala"
+  url: "https://ci-builds.apache.org/blue/organizations/jenkins/Kafka%2Fkafka-pr/activity/"
+  logo: "/assets/images/bigdata/kafka/logo.png"
+
+---	
+<p>Apache Kafka</p>
