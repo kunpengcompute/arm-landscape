@@ -7,7 +7,7 @@ meta:
   keywords: "Apache, RocketMQ"
 
 project:
-  title: "Apache RocketMQ"
+  title: "RocketMQ"
   type: "Java"
   url: "https://travis-ci.org/github/apache/rocketmq"
   logo: "/assets/images/web/rocketmq/logo.jpg"
