@@ -25,6 +25,11 @@
 	background-color: rgb(153, 1, 1);
 	}
 
+.bgblue {
+	@extend .bgpurple;
+	background-color: rgb(47, 109, 189);
+	}
+
 .container {
 	display: block;
 	margin: 0 auto;
@@ -203,6 +208,13 @@
     border-left: 2px solid rgb(153, 1, 1);
 	border-right: 2px solid rgb(153, 1, 1);
 	border-bottom: 2px solid rgb(153, 1, 1);
+}
+
+.projects-list-libraries {
+    @extend .projects-list-bigdata;
+    border-left: 2px solid rgb(47, 109, 189);
+	border-right: 2px solid rgb(47, 109, 189);
+	border-bottom: 2px solid rgb(47, 109, 189);
 }
 
 .footer {
