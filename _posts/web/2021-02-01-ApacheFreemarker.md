@@ -7,7 +7,7 @@ meta:
   keywords: "Apache, FreeMarker"
 
 project:
-  title: "Apache FreeMarker"
+  title: "FreeMarker"
   type: "Java"
   url: "https://travis-ci.com/github/apache/freemarker"
   logo: "/assets/images/web/freemarker/logo.png"
