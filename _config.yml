@@ -5,6 +5,7 @@ description: "Arm CI Landscape"
 keywords: "Arm, CI, Landscape"
 email: "zheng.zhenyu@outlook.com"
 github: "https://kunpengcompute.github.io/"
+issue: "https://github.com/kunpengcompute/arm-landscape/issues"
 
 # Site config
 baseurl: "/arm-landscape"
