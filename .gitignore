@@ -10,6 +10,7 @@ Thumbs.db
 # Compilation
 .sass-cache/
 _site/
+.jekyll-cache/
 
 # Logs and db's
 *.log
