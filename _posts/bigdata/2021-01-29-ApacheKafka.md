@@ -9,8 +9,9 @@ meta:
 project:
   title: "Apache Kafka"
   type: "Scala"
+  ci_url: "https://ci-builds.apache.org/blue/organizations/jenkins/Kafka%2Fkafka-pr/activity/"
   url: "https://ci-builds.apache.org/blue/organizations/jenkins/Kafka%2Fkafka-pr/activity/"
   logo: "/assets/images/bigdata/kafka/logo.png"
 
----	
+---
 <p>Apache Kafka</p>

@@ -9,8 +9,9 @@ meta:
 project:
   title: "Prometheus"
   type: "Go"
+  ci_url: "https://cncf.ci/"
   url: "https://cncf.ci/"
   logo: "/assets/images/cloud/prometheus/logo.png"
 
----	
+---
 <p>Prometheus</p>

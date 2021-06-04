@@ -9,8 +9,9 @@ meta:
 project:
   title: "PostgreSQL"
   type: "C"
+  ci_url: "https://buildfarm.postgresql.org/cgi-bin/show_history.pl?nm=eelpout&br=HEAD"
   url: "https://buildfarm.postgresql.org/cgi-bin/show_history.pl?nm=eelpout&br=HEAD"
   logo: "/assets/images/database/postgresql/logo.jpg"
 
----	
+---
 <p>PostgreSQL</p>

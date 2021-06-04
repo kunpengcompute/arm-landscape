@@ -9,8 +9,9 @@ meta:
 project:
   title: "openGauss"
   type: "C"
+  ci_url: "https://jenkins.opengauss.org/"
   url: "https://jenkins.opengauss.org/"
   logo: "/assets/images/database/opengauss/logo.png"
 
----	
+---
 <p>openGauss</p>

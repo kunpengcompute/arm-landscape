@@ -9,8 +9,9 @@ meta:
 project:
   title: "TensorFlow"
   type: "Python/C++"
+  ci_url: "https://github.com/tensorflow/tensorflow#community-supported-builds"
   url: "https://github.com/tensorflow/tensorflow#community-supported-builds"
   logo: "/assets/images/ai/tensorflow/logo.png"
 
----	
+---
 <p>TensorFlow</p>

@@ -9,8 +9,9 @@ meta:
 project:
   title: "Apache Druid"
   type: "Java"
+  ci_url: "https://travis-ci.com/github/apache/druid/pull_requests"
   url: "https://travis-ci.com/github/apache/druid/pull_requests"
   logo: "/assets/images/bigdata/druid/logo.png"
 
----	
+---
 <p>Apache Druid</p>
