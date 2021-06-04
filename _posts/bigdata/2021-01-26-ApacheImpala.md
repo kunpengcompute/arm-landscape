@@ -9,8 +9,9 @@ meta:
 project:
   title: "Apache Impala"
   type: "Java"
+  ci_url: "http://status.openlabtesting.org/project/github.com/apache/impala"
   url: "http://status.openlabtesting.org/project/github.com/apache/impala"
   logo: "/assets/images/bigdata/impala/logo.png"
 
----	
+---
 <p>Apache Impala</p>

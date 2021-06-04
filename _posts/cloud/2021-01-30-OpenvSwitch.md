@@ -9,8 +9,9 @@ meta:
 project:
   title: "Open vSwitch"
   type: "C"
+  ci_url: "https://travis-ci.org/openvswitch/ovs"
   url: "https://travis-ci.org/openvswitch/ovs"
   logo: "/assets/images/cloud/ovs/logo.png"
 
----	
+---
 <p>Open vSwitch</p>

@@ -9,6 +9,7 @@ meta:
 project:
   title: "Velocity"
   type: "Java"
+  ci_url: "https://travis-ci.com/github/apache/velocity-engine"
   url: "https://travis-ci.com/github/apache/velocity-engine"
   logo: "/assets/images/web/velocity/logo.png"
 

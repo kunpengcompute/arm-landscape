@@ -9,8 +9,9 @@ meta:
 project:
   title: "Apache Storm"
   type: "Java"
+  ci_url: "http://status.openlabtesting.org/project/github.com/apache/storm"
   url: "http://status.openlabtesting.org/project/github.com/apache/storm"
   logo: "/assets/images/bigdata/storm/logo.png"
 
----	
+---
 <p>Apache Storm</p>

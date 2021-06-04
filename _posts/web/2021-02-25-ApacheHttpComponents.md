@@ -9,8 +9,9 @@ meta:
 project:
   title: "HttpComponents"
   type: "Java"
+  ci_url: "https://travis-ci.com/github/apache/httpcomponents-core"
   url: "https://travis-ci.com/github/apache/httpcomponents-core"
   logo: "/assets/images/web/httpcomponents-core/logo.png"
 
----	
+---
 <p>Apache HttpComponents</p>
