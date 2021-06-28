@@ -9,8 +9,8 @@ meta:
 project:
   title: "Varnish Cache"
   type: "C"
-  ci_url: "https://travis-ci.org/github/varnishcache/varnish-cache/pull_requests"
-  url: "https://travis-ci.org/github/varnishcache/varnish-cache/pull_requests"
+  ci_url: "https://app.circleci.com/pipelines/github/varnishcache/varnish-cache"
+  url: "https://app.circleci.com/pipelines/github/varnishcache/varnish-cache"
   logo: "/assets/images/web/varnishcache/logo.png"
 
 ---
