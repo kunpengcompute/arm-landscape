@@ -1,6 +1,6 @@
 html {
 	font-size: 62.5%;
-	background: #fafafa;;
+	background: white;
 }
 
 body {
@@ -58,6 +58,18 @@ h4,
     padding-bottom: 3px;
 }
 
+h5,
+.h5 {
+	color: $color-white;
+	font-family: $font-poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+	padding-left: 1rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.6rem;
+}
 
 p {
 	margin: 0;
