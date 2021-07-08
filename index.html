@@ -10,13 +10,13 @@
 	{% include head.html %}
 </head>
 <body>
+	{% include menu.html %}
 	<main class="content">
 		<section class="intro">
 			<div class="container">
-				<p>{{ site.description }}</p>
-				<h6>CI system is very important in modern software development workflow, it gurantees the quality
-					of the development actions and the software. Arm CI can ensure the software's quality on Arm
-					platform. The following open source projects have Arm CI. Click project logos to check CI details.</h6>
+				<div class="intro_content">The Arm Datacenter Ecosystem Landscape is created to provide a centralized
+					information hub for Arm developers across the world. Click logos to check Arm support details for
+					correcponding project and/or product.</div>
 			</div>
 		</section>
 		<section class="projects">
@@ -116,5 +116,6 @@
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/baidustat.js" | prepend: site.baseurl }}"></script>
+
 </body>
 </html>
