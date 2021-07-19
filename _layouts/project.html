@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ page.project.title }}</title>
+	<title>{{ site.tagline }} / {{ page.project.title }}</title>
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
 	{% include head.html %}
 </head>
 <body>
-	{% include header.html %}
+	{% include menu.html %}
 	<main class="content">
 		<section class="project">
 			<div class="container">
 				<article>
-					<span class="h2">Project Title</span>
+					<div class="project_section">OVERVIEW</div>
 					<h1>
-						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
+						<a href="{{ page.project.url | prepend: site.baseurl }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 					</h1>
-					<span class="h2">Role</span>
-					{{ page.content }}
-					<div class="project-meta">
-						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						<span class="h2">Agency</span>
-						<p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p>
-						<span class="h2">Year</span>
-						<p>{{ page.agency.year }}</p>
+					<div class="overview_container_out">
+						<div class="overview_container_in">
+							<p>{{ page.project.overview }}</p>
+						</div>
+						<div class="overview_img">
+							<img src="{{ page.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+						</div>
 					</div>
+					<hr class="project_section_line">
+					<div class="project_section">DETAILS</div>
+					{% if page.supported_releases %}
+					<div class="project_detail_title">
+						<h5>Supported Releases</h5>
+					</div>
+					<div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;">
+						<ul class="release_list">
+							{% for release in page.supported_releases %}
+							<li class="version_list">
+								<a title="{{ release.version }}" href="{{ release.url }}" target="_blank" rel="nofollow">{{ release.version }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+					<div class="project_detail_title">
+					    <h5>Upstream CI Status</h5>
+				    </div>
+					<div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
+					font-weight: 400;">
+						<a title="{{ page.project.title }} Arm CI" href="{{ page.project.ci_url }}" target="_blank" rel="nofollow" style="font-size: 1.6rem;">{{ page.project.title }} Arm CI</a>
+					</div>
+					{% if page.work_items %}
+					<div class="project_detail_title">
+					    <h5>Work Items</h5>
+					</div>
+					<div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;"">
+						<ul class="work_list">
+						{% for work in page.work_items %}
+							<li class="version_list" style="text-decoration: none;">
+								<a title="{{ work.title }}" href="{{ work.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">[{{work.status}}] {{ work.title }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
+					{% if page.user_stories %}
+					<div class="project_detail_title">
+					    <h5>User Stories</h5>
+					</div>
+					{% endif %}
+					{% if page.events %}
+					<div class="project_detail_title">
+						<h5>News and Events</h5>
+					</div>
+					<div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;"">
+						<ul class="event_list">
+							{% for event in page.events %}
+							<li class="version_list">
+								<a title="{{ event.title }}" href="{{ event.url }}" target="_blank" rel="nofollow">[{{event.type}}] {{ event.title }} ({{event.language}})</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
 				</article>
-				<aside>
-					<ul>
-						{% for image in page.images %}
-						<li>
-							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
-						</li>
-						{% endfor %}
-					</ul>
-				</aside>
-			</div>
-		</section>
-		<section class="project-navigation">
-			<div class="container">
-				{% if page.previous and page.previous.categories contains "projects" %}
-				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
-					<span class="h2">Previous</span>
-					<h2>{{ page.previous.project.title }}</h2>
-				</a>
-				{% endif %}
-				{% if page.next and page.next.categories contains "projects" %}
-				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
-					<span class="h2">Next</span>
-					<h2>{{ page.next.project.title }}</h2>
-				</a>
-				{% endif %}
 			</div>
 		</section>
 	</main>
