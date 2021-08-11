@@ -42,12 +42,48 @@
 					</div>
 					{% endif %}
 					<div class="project_detail_title">
-					    <h5>Upstream CI Status</h5>
+					    <h5>Project CI Status</h5>
 				    </div>
 					<div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
 					font-weight: 400;">
-						<a title="{{ page.project.title }} Arm CI" href="{{ page.project.ci_url }}" target="_blank" rel="nofollow" style="font-size: 1.6rem;">{{ page.project.title }} Arm CI</a>
+					<ul class="ci_list">
+						{% for CI in page.project_ci %}
+							<li class="ci_items" style="text-decoration: none;">
+								<div style="white-space: nowrap;">
+									<a title="{{ CI.title }}" href="{{ CI.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem;">{{ CI.title }}</a>
+								</div>
+								<div class="ci_status_img">
+									<img src="{{ CI.status | prepend: site.baseurl }}" alt="{{ CI.title }}" style="display: inline;"/>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
 					</div>
+					{% if page.user_stories %}
+					<div class="project_detail_title">
+					    <h5>User Stories</h5>
+					</div>
+						<div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #ffff; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
+					font-weight: 400; border: solid #d6d6d650;">
+					<ul class="story_list">
+						{% for story in page.user_stories %}
+							<li class="story_items" style="text-decoration: none;">
+								<div class="story_item_logo">
+									<img src="{{ story.logo | prepend: site.baseurl }}" alt="{{ story.title }}" style="display: inline;"/>
+								</div>
+								<div style="width: 600px; margin-right: 20px;">
+									<p style="color: black; margin-top: 10px;">{{ story.discription }}</p>
+									{% if story.language %}
+									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 440px; color: darkblue;">Read More({{story.language}}) ...</a>
+								    {% else %}
+									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 470px; color: darkblue;">Read More ...</a>
+									{% endif %}
+									</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+					{% endif %}
 					{% if page.work_items %}
 					<div class="project_detail_title">
 					    <h5>Work Items</h5>
@@ -62,11 +98,6 @@
 						</ul>
 					</div>
 					{% endif %}
-					{% if page.user_stories %}
-					<div class="project_detail_title">
-					    <h5>User Stories</h5>
-					</div>
-					{% endif %}
 					{% if page.events %}
 					<div class="project_detail_title">
 						<h5>News and Events</h5>
@@ -74,7 +105,7 @@
 					<div style="padding-left: 2rem; background: #d6d6d650; margin-left: 2rem; margin-right: 2rem;"">
 						<ul class="event_list">
 							{% for event in page.events %}
-							<li class="version_list">
+							<li class="event_item_list">
 								<a title="{{ event.title }}" href="{{ event.url }}" target="_blank" rel="nofollow">[{{event.type}}] {{ event.title }} ({{event.language}})</a>
 							</li>
 							{% endfor %}
