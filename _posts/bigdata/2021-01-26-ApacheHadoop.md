@@ -71,6 +71,3 @@ events:
       type: "Online Session"
       url: "https://connect.linaro.org/resources/lvc20/lvc20-303"
       language: "English"
-
----
-<p>Apache Hadoop</p>
