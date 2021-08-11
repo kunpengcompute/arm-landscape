@@ -74,4 +74,4 @@ events:
 
 
 ---
-<p>Apache Druid</p>
+<p>Apache Hadoop</p>
