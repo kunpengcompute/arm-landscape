@@ -303,6 +303,8 @@
 	box-shadow: 4px 5px 5px #d6d6d6;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
+	display: flex;
+	flex-wrap: wrap;
 	@include clearfix;
 
 	li {
