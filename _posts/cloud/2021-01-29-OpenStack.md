@@ -12,7 +12,7 @@ project:
   ci_url: "https://zuul.opendev.org/t/openstack/status"
   url: "OpenStack"
   logo: "/assets/images/cloud/openstack/logo.png"
-  overview: "OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms.Beyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to ensure high availability of user applications."
+  overview: "OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms. Beyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to ensure high availability of user applications."
 
 supported_releases:
   - release:
@@ -39,7 +39,7 @@ supported_releases:
 
 project_ci:
     - CI:
-      title: "Hadoop Upstream Arm CI"
+      title: "OpenStack Upstream Arm CI"
       status: "/assets/images/common/CI_status.png"
       url: "https://zuul.opendev.org/t/openstack/builds?pipeline=check-arm64"
 
