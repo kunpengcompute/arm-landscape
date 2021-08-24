@@ -27,10 +27,6 @@ project_ci:
       title: "Hadoop Upstream Arm CI"
       status: "/assets/images/common/CI_status.png"
       url: "https://ci-hadoop.apache.org/view/Hadoop/job/hadoop-qbt-linux-ARM-trunk/"
-    - CI:
-      title: "Hadoop Upstream Arm CI 2"
-      status: "/assets/images/common/CI_status.png"
-      url: "https://ci-hadoop.apache.org/view/Hadoop/job/hadoop-qbt-linux-ARM-trunk/"
 
 user_stories:
     - story:
