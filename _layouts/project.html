@@ -63,20 +63,20 @@
 					<div class="project_detail_title">
 					    <h5>User Stories</h5>
 					</div>
-						<div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #ffff; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
-					font-weight: 400; border: solid #d6d6d650;">
+						<div style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 2rem; background: #f2f2f2; margin-left: 2rem; margin-right: 2rem; font-size: 15px;
+					font-weight: 400; ">
 					<ul class="story_list">
 						{% for story in page.user_stories %}
 							<li class="story_items" style="text-decoration: none;">
-								<div class="story_item_logo">
-									<img src="{{ story.logo | prepend: site.baseurl }}" alt="{{ story.title }}" style="display: inline;"/>
+								<div>
+									<h6>{{ story.title }}</h6>
 								</div>
-								<div style="width: 600px; margin-right: 20px;">
+								<div>
 									<p style="color: black; margin-top: 10px;">{{ story.discription }}</p>
 									{% if story.language %}
-									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 440px; color: darkblue;">Read More({{story.language}}) ...</a>
+									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 900px; color: darkblue;">Read More({{story.language}}) ...</a>
 								    {% else %}
-									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 470px; color: darkblue;">Read More ...</a>
+									    <a title="{{ story.title }}" href="{{ story.url }}" target="_blank" rel="nofollow" style="font-size: 1.5rem; margin-top: 3px; margin-left: 930px; color: darkblue;">Read More ...</a>
 									{% endif %}
 									</div>
 							</li>
