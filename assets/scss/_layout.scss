@@ -105,14 +105,14 @@
 
 .story_list {
 	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	transition: none;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    transition: none;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .story_items {
@@ -124,9 +124,17 @@
 	margin-right: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-	display: flex;
-    align-content: center;
-	justify-content: space-evenly;
+	align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+	border: solid black 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+	margin-bottom: 1rem;
 }
 
 .event_list {
