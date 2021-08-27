@@ -40,7 +40,7 @@ supported_releases:
 
 project_ci:
     - CI:
-      title: "OpenStack Upstream Arm CI"
+      title: "OpenStack Upstream AArch64 CI"
       status: "/assets/images/common/CI_status.png"
       url: "https://zuul.opendev.org/t/openstack/builds?pipeline=check-arm64"
 
